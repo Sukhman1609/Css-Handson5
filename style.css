@@ -1,0 +1,180 @@
+.box{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+h1{
+    font-size: 25pt;
+}
+
+.num{
+    padding-top: 100px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.row1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(83, 95, 123);
+    margin: 20px;
+    animation: sample1 2s infinite alternate;
+}
+
+.row2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(123, 83, 118);
+    margin: 20px;
+    animation: sample2 2s infinite alternate;
+}
+
+.row3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(120, 132, 161);
+    margin: 20px;
+    animation: sample3 2s infinite normal;
+}
+
+.rw{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.row4{
+    background-color: rgb(83, 95, 123);
+    animation: sample4 2s infinite alternate;
+}
+
+.row5{
+    background-color: rgb(150, 61, 61);
+    animation: sample5 2s infinite alternate;
+}
+
+.row6{
+    background-color: rgb(67, 118, 67);
+    animation: sample6 2s infinite alternate;
+}
+
+@keyframes sample1 {
+    0%{
+        transform: skew(-30deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+    
+}
+
+@keyframes sample2 {
+    0%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+
+@keyframes sample3 {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sample4 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,0.5);
+    }
+}
+
+@keyframes sample5 {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,1);
+    }
+}
+
+@keyframes sample6 {
+    0%{
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ahref{
+   font-size: 25pt;
+   color: brown;
+   margin-left: -170px;
+}
+
+a{
+    margin-left: 750px; 
+
+}
+
+.box1{
+    display: flex; 
+    justify-content: center;  
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin:0px 0px 10px 20px;
+    transition: all 2s;
+
+}
+    
+.one:hover{
+    width: 300px;
+}
+
+.two:hover{
+    width:300px;
+    height:300px;
+}
+
+.three:hover{
+    transition-timing-function: linear;
+    width: 300px;
+}
+
+.four:hover{
+    transition-timing-function: ease;
+    width: 300px;
+}
+
+.five:hover{
+    transition-timing-function: ease-in;
+    width: 300px;
+}
+
+.six:hover{
+    transition-timing-function: ease-out;
+    width: 300px;
+}
+
+.seven:hover{
+    transition-timing-function: ease-in-out;
+    width: 300px;
+}
+
